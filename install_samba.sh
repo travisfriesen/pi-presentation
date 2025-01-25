@@ -10,5 +10,5 @@ sudo mkdir /images
 sudo cp -r images/* /images
 sudo chown -hR slides images
 
-cp smb.conf /etc/samba/smb.conf
+sudo cp smb.conf /etc/samba/smb.conf
 sudo systemctl restart smbd
