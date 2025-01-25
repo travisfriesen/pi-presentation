@@ -1,0 +1,1 @@
+# {background-image=slides/alberta.png}

@@ -22,3 +22,9 @@ sudo apt install git -y
 mkdir slides && cd slides
 git clone https://github.com/hakimel/reveal.js.git
 cd reveal.js && npm install
+
+cd ..
+./install_samba.sh
+
+./generate_slides.sh
+
