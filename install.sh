@@ -24,6 +24,7 @@ git clone https://github.com/hakimel/reveal.js.git
 cd reveal.js && npm install
 
 cd ..
+sudo apt install pandoc -y
 ./install_samba.sh
 
 ./generate_slides.sh
