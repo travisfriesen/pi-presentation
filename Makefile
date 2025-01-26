@@ -1,5 +1,4 @@
-#Thank you to Franklin Bristow for allowing me to use this Makefile as the base of the presentation.
-
+#Thank you to Franklin Bristow for allowing me to use this Makefile as the base for this file.
 SLIDES.md := $(wildcard slides/*.md)
 
 all: slides.html
@@ -7,7 +6,8 @@ all: slides.html
 slides.html: slides.md
 	pandoc -f markdown -t revealjs --standalone $< -o $@ \
 		-V header-includes="<meta http-equiv='refresh' content='14400'>" \
-		-V autoSlide=7500 -V loop=true --embed-resources \
+		-V autoSlide=7500 -V loop=true -V controls=false \
+		-V autoSlideStoppable=false -V progress=false --self-contained \
 		-V revealjs-url=reveal.js \
 		--resource-path=.:slides/
 # 14400 is 4 hours, this slide show will auto refresh itself every 4 hours.
