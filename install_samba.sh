@@ -2,7 +2,7 @@
 
 sudo apt install samba -y
 
-adduser --system --no-create-home slides
+sudo adduser --system --no-create-home slides
 
 echo "Enter a password for the share access account." && sudo smbpasswd -a slides
 
